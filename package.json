@@ -1,0 +1,14 @@
+{
+  "name": "perlis",
+  "version": "0.0.1",
+  "description": "Perlis is a lib that adds as many useful functional functions to maximize efficiency",
+  "main": "src/index.ts",
+  "author": "Carlo Bagnoli",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "rollup": "^2.58.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.4.3"
+  }
+}
