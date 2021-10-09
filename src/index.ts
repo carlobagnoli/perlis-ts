@@ -21,9 +21,9 @@ export const init  = <T>(x: T[]) => x.slice(0, -1);
 export const foldl = <A, B>(x: A[], f: (a: A, b: B) => A, init: A) => Array.prototype.reduce.bind(x)(f, init);
 export const foldl1 = <A, B>(x: A[], f: (a: A, b: B) => A) => Array.prototype.reduce.bind(x)(f);
 export const cfoldl = <A, B>(x: A[]) => (f: (a: A, b: B) => A) => (init: A) => Array.prototype.reduce.bind(x)(f, init);
-export const cfoldl1 = <A, B>(x: A[]) => (f: (a: A, b: B) => A) => Array.prototype.reduce.bind(x)(f, init);
+export const cfoldl1 = <A, B>(x: A[]) => (f: (a: A, b: B) => A) => Array.prototype.reduce.bind(x)(f);
 
 export const foldr = <A, B>(x: A[], f: (a: A, b: B) => A, init: A) => Array.prototype.reduceRight.bind(x)(f, init);
 export const foldr1 = <A, B>(x: A[], f: (a: A, b: B) => A) => Array.prototype.reduceRight.bind(x)(f);
 export const cfoldr = <A, B>(x: A[]) => (f: (a: A, b: B) => A) => (init: A) => Array.prototype.reduceRight.bind(x)(f, init);
-export const cfoldr1 = <A, B>(x: A[]) => (f: (a: A, b: B) => A) => Array.prototype.reduceRight.bind(x)(f, init);
+export const cfoldr1 = <A, B>(x: A[]) => (f: (a: A, b: B) => A) => Array.prototype.reduceRight.bind(x)(f);

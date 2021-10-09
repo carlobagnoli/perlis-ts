@@ -1,6 +1,6 @@
 {
   "name": "perlis",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Perlis is a lib that adds as many useful functional functions to maximize efficiency",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
