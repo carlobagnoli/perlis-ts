@@ -2,10 +2,18 @@
   "name": "perlis",
   "version": "0.0.1",
   "description": "Perlis is a lib that adds as many useful functional functions to maximize efficiency",
-  "main": "src/index.ts",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
   "author": "Carlo Bagnoli",
   "license": "MIT",
   "private": false,
+  "files": [
+    "lib",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
   "dependencies": {
     "rollup": "^2.58.0",
     "rollup-plugin-typescript2": "^0.30.0",
